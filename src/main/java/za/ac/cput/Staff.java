@@ -5,7 +5,7 @@ package za.ac.cput;
  * Student Number: 218338562
  *
  * Staff Class.
- * Contains:    Constructor, Getters, Setters, and toString
+ * Contains:    Constructor, Getters, Setters, and toString,
  *              equals() and hashCode() for staffNumber
  */
 
