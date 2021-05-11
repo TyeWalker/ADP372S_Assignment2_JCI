@@ -9,10 +9,10 @@ package za.ac.cput;
  *              equals() and hashCode() for staffNumber
  *
  * Numbered:
- * i.   Collections
- * ii.  Map
- * iii. Set
- * iv.  List
+ * i.   Collections - Supplier
+ * ii.  Map         - Customer
+ * iii. Set         - Staff
+ * iv.  List        - Item
  */
 
 import java.util.*;
@@ -126,6 +126,9 @@ public class AssignmentTwo {
         //Finding staff: Prints true if staff found
         System.out.println(staffMembers.contains(staffThree));
     }
+
+
+
 
     //iv.   List
 
