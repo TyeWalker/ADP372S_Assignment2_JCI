@@ -7,6 +7,7 @@ package za.ac.cput;
  * Staff Class.
  * Contains:    Constructor, Getters, Setters, and toString,
  *              equals() and hashCode() for staffNumber
+ *
  */
 
 import java.util.Objects;
