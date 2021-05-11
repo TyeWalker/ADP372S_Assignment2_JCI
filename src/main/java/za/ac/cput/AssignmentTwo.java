@@ -20,6 +20,10 @@ import java.util.*;
 public class AssignmentTwo {
 
 
+    //Supplier Objects:
+    Supplier supOne = new Supplier("New Balance", "555767482", 726581);
+    Supplier supTwo = new Supplier("Nike", "666821549", 105553);
+    Supplier supThree = new Supplier("Sony", "743564289", 8531000);
 
     //Customer Objects:
     Customer custOne = new Customer("Biggie", "Smalls", 877);
@@ -38,6 +42,31 @@ public class AssignmentTwo {
 
     //i.    Collections:
 
+    //Initial Capacity: 10
+    Collection<Supplier> supCollection = new LinkedHashSet<>(10);
+
+    //Add:
+    public void addSupplier() {
+        supCollection.add(supOne);
+        supCollection.add(supTwo);
+        supCollection.add(supThree);
+    }
+
+    //Remove:
+    public void removeSupplier() {
+        //Add suppliers to collection:
+        addSupplier();
+        //Remove supTwo:
+        supCollection.add(supTwo);
+    }
+
+    //Find:
+    public void findSupplier() {
+        //Add suppliers to collection:
+        addSupplier();
+        //Finding item: Prints true if list contains supThree
+        System.out.println(supCollection.contains(supThree));
+    }
 
 
     //ii.   Map:
@@ -59,6 +88,7 @@ public class AssignmentTwo {
         mapCustomer.remove(1);
     }
 
+    //Not complete:
     //Find:
     public void findCustomer() {
         //Add customers to map
@@ -125,6 +155,7 @@ public class AssignmentTwo {
 
 
     public static void main(String[] args) {
+        AssignmentTwo a = new AssignmentTwo();
 
     }
 }
