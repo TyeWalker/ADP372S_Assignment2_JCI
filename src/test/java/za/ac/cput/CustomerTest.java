@@ -23,6 +23,7 @@ class CustomerTest {
         mapCustomer.put(2, testCustThree);
     }
 
+    //Add:
     @Test
     void addTestCustomer() {
         mapCustomer.put(3, testCustFour);
@@ -31,6 +32,7 @@ class CustomerTest {
 
     }
 
+    //Remove:
     @Test
     void removeTestCustomer() {
         //Removing object at key = 1
@@ -42,7 +44,7 @@ class CustomerTest {
         assertFalse(mapCustomer.containsKey(1));
     }
 
-
+    //Find:
     @Test
     void findTestCustomer() {
         int mapSize = mapCustomer.size();
