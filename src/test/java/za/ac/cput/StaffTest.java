@@ -1,5 +1,14 @@
 package za.ac.cput;
 
+/*
+ * @Author: Tye Walker
+ * Student Number: 218338562
+ *
+ * Set Test using Staff class
+ * Test for:    Add, Remove, Find
+ *
+ */
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

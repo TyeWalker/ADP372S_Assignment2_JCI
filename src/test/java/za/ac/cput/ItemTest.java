@@ -1,5 +1,14 @@
 package za.ac.cput;
 
+/*
+ * @Author: Tye Walker
+ * Student Number: 218338562
+ *
+ * List Test using Item class
+ * Test for:    Add, Remove, Find
+ *
+ */
+
 import com.sun.source.tree.UsesTree;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
