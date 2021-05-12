@@ -155,10 +155,4 @@ public class AssignmentTwo {
         //Finding item: Prints true if list contains itemThree
         System.out.println(listItem.contains(itemThree));
     }
-
-
-    public static void main(String[] args) {
-        AssignmentTwo a = new AssignmentTwo();
-
-    }
 }
