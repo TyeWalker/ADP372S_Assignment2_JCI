@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ItemTest {
 
-    List<Item> listItem = new ArrayList<>();
+    List<Item> testListItem = new ArrayList<>();
     Item itemOne = new Item("Book", 83.95);
     Item itemTwo = new Item("Pencil", 19.95);
     Item itemThree = new Item("Pen", 50.00);
@@ -28,26 +28,26 @@ class ItemTest {
 
     @BeforeEach
     void setUp() {
-        listItem.add(itemOne);
-        listItem.add(itemTwo);
-        listItem.add(itemThree);
+        testListItem.add(itemOne);
+        testListItem.add(itemTwo);
+        testListItem.add(itemThree);
     }
 
     //Test to add item to list:
     @Test
     void addTest() {
         //Add itemFour to list
-        listItem.add(itemFour);
+        testListItem.add(itemFour);
         //size = the size of the list (4)
-        int size = listItem.size();
+        int size = testListItem.size();
         assertEquals(4, size);
     }
 
     //Test to remove item from list
     @Test
     void removeTest() {
-        listItem.remove(itemTwo);
-        int size = listItem.size();
+        testListItem.remove(itemTwo);
+        int size = testListItem.size();
         assertEquals(2, size);
     }
 
@@ -55,6 +55,6 @@ class ItemTest {
     @Test
     void findTest() {
         //Passes if itemOne is in the list
-        assertTrue(listItem.contains(itemOne));
+        assertTrue(testListItem.contains(itemOne));
     }
 }
