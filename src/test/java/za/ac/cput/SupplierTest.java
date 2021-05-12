@@ -28,18 +28,24 @@ class SupplierTest {
 
     @BeforeEach
     void setUp() {
+        //Adding objects to collection:
         testCollectionSup.add(testSupOne);
         testCollectionSup.add(testSupTwo);
         testCollectionSup.add(testSupThree);
     }
 
+    //Add:
     @Test
     void testAddCollection() {
+        //Add testSupFour
         testCollectionSup.add(testSupFour);
+        //Set colSize to length of testCollectionSup
         int colSize = testCollectionSup.size();
+        //Passes if colSize has increased to 4
         assertEquals(4, colSize);
     }
 
+    //Remove:
     @Test
     void testRemoveCollection() {
         testCollectionSup.remove(testSupTwo);
@@ -47,8 +53,10 @@ class SupplierTest {
         assertEquals(2, colSize);
     }
 
+    //Find:
     @Test
     void testFindCollection() {
+        //Passes if testCollectionSup contains testSupOne.
         assertTrue(testCollectionSup.contains(testSupOne));
     }
 }
